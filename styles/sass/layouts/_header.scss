@@ -5,16 +5,10 @@
     height: 156px;
     margin: 0 auto;
     background: url("/images/header-img.svg");
-    // &::after{
-    //     content: "";
-    //     display: inline-block;
-    //     position: absolute;
-    //     z-index: 1;
-    //     top: -500px;
-    //     width: 263.47px;
-    //     height: 824.35px;
-    //     background: linear-gradient(135deg, #002424 100%, #DE39FF 0%) center left;
-    //     border-radius: 252px;
-    //     transform: rotate(-135deg);
-    // }
+}
+
+@media only screen and (max-width: 400px){
+    .header{
+        width: 375px;
+    }
 }

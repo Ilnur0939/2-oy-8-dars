@@ -146,7 +146,7 @@
 
 // medisaScreen
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     .container{
         // width: 327px;
         margin: 0 auto;
@@ -155,7 +155,7 @@
     .hero__box{
         position: relative; 
         display: block;
-        width: 345px;
+        width: 350px;
     }
 
     .hero-list__img{
