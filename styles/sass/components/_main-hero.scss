@@ -1,0 +1,181 @@
+.main-hero{
+    background: #EFFAFA;
+}
+
+.hero__box{
+    @include row;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+    &:nth-child(1){
+        margin-top: 76px;
+    }
+}
+
+.hero-list__inner{
+    margin-left: 24px;
+}
+
+.middle-list__top{
+    @include row;
+    
+    .middle-list__title{
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #5CA5A5;
+    }
+    
+    .middle-list__new{
+        width: 54px;
+        height: 24px;
+        @include row;
+        justify-content: center;
+        margin-left: 16px;
+        background: #5CA5A5;
+        border-radius: 12px;
+        .middle-list__link{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+    }
+
+    .middle-list__btn{
+        width: 79px;
+        height: 24px;
+        @include row;
+        justify-content: center;
+        margin-left: 8px;
+        background: #2B3939;
+        border-radius: 12px;
+        .middle-list__link{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+    }
+    
+}
+
+.middle-list__level{
+    margin: 0;
+    margin-top: 8px;
+    
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2B3939;
+}
+
+.middle-list__about{
+    position: relative;
+    margin-top: 8px;
+    margin-left: 36px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.115385px;
+    color: #7C8F8F;
+    &:nth-child(3){
+        margin-left: 0;
+        &::before{
+            display: none;
+        }
+    }
+
+    &::before{
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: -16px;
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #B7C4C4;
+        
+    }
+}
+
+.hero-list__list{
+    position: relative;
+    @include row;
+    margin-right: 0;
+    margin-left: auto;
+    .list__item{
+        padding: 4px 8px;
+        margin-left: 16px;
+        background: #EFF6F6;
+        mix-blend-mode: normal;
+        border-radius: 4px;
+        &:active{
+            background: #5CA5A5;
+        }
+        &:active .list__link{
+            color: #ffffff;
+        }
+        .list__link{
+            // position: absolute;
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            color: #5CA5A5;
+        }
+    }
+}
+
+
+// medisaScreen
+
+@media only screen and (max-width: 600px) {
+    .container{
+        // width: 327px;
+        margin: 0 auto;
+    }
+
+    .hero__box{
+        position: relative; 
+        display: block;
+        width: 345px;
+    }
+
+    .hero-list__img{
+        position: absolute;
+        top: -24px;
+        left: 60px;
+        width: 48px;
+        height: 48px;       
+    }
+
+    .hero-list__inner{
+        border-bottom: 1px solid #B7C4C4;
+    }
+
+
+    .hero-list__list{
+        flex-wrap: wrap;
+        .list__item{
+            margin-top: 20px;
+        }
+    }
+
+}

@@ -1,4 +1,14 @@
-// @import "base/fonts";
-// @import "base/general";
-// @import "components/index";
-// @import "layouts/index";
+@import "abstract/mixin";
+@import "abstract/variables";
+
+
+// base
+@import "base/fonts";
+@import "base/general";
+
+// components
+@import "components/main-hero";
+
+// layouts
+@import "layouts/index";
+

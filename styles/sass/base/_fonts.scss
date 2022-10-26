@@ -1,4 +1,15 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "Spartan";
+    src: url("/fonts/LeagueSpartan-Bold.woff") format("woff"),
+    url("/fonts/LeagueSpartan-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("/fonts/LeagueSpartan-Medium.woff") format("woff"),
+    url("/fonts/LeagueSpartan-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
 }
